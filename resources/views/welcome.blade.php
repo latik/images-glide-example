@@ -66,7 +66,11 @@
 <body>
 <div class="flex-center position-ref full-height">
     <div class="content">
-
+        @if (session('status'))
+            <div class="alert alert-success">
+                {{ session('status') }}
+            </div>
+        @endif
         <form method="POST" action="{{ route('upload') }}" enctype="multipart/form-data">
             @csrf
 
