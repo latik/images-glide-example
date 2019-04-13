@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/upload', 'UploadImage')->name('upload');
+Route::get('/images/{name}', 'GetImage');
