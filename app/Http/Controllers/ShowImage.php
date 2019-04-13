@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use League\Glide\Responses\LaravelResponseFactory;
 use League\Glide\ServerFactory;
 
-class GetImage extends Controller
+class ShowImage extends Controller
 {
     /**
      * Handle the incoming request.

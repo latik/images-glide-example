@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post('/upload', 'UploadImage')->name('upload');
-Route::get('/storage/images/{path}', 'GetImage')->name('show');
+Route::get('/storage/images/{path}', 'ShowImage')->name('show');
